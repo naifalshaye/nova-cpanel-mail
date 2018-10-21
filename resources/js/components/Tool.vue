@@ -86,6 +86,10 @@ export default {
                     field: 'email',
                 },
                 {
+                    label: 'Quota',
+                    field: 'quota'
+                },
+                {
                     label: 'Usage',
                     field: 'usage'
                 },
@@ -104,6 +108,10 @@ export default {
         init(){
             Nova.request().get('/nova-vendor/cpanel-mail/')
                 .then(response => {
+                for (var i = 0; i < response.data.length; i++) {
+                    response.data[i]['quota'] = response.data[i]['quota'] / 1024 /1024 + ' MB'
+                    response.data[i]['usage'] = response.data[i]['usage'] / 1024 /1024 + ' MB'
+                }
                 this.rows = response.data;
         });
         },

@@ -23,6 +23,7 @@ class CpanelMailController
         foreach ($emails as $email){
             array_push($list,[
                 'email'=> $email->email,
+                'quota'=> $email->_diskquota,
                 'usage'=> $email->_diskused,
                 'delete' => 'Delete'
             ]);

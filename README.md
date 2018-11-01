@@ -37,9 +37,9 @@ CPANEL_PASSWORD=password
 ```
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/naifalshaye/cpanel-mail/master/screenshots/add.png" width="800">
+<img src="https://raw.githubusercontent.com/naifalshaye/nova-cpanel-mail/master/screenshots/add.png" width="800">
 
-<img src="https://raw.githubusercontent.com/naifalshaye/cpanel-mail/master/screenshots/list.png" width="800">
+<img src="https://raw.githubusercontent.com/naifalshaye/nova-cpanel-mail/master/screenshots/list.png" width="800">
 
 ## Support:
 naif@naif.io
